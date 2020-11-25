@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExtraCalendar from "./components/ExtraCalendar";
+import ExtraCalendar from "./ExtraCalendar";
 
 class App extends React.Component {
     constructor(props) {
