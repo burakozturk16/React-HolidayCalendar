@@ -23,6 +23,11 @@ This component created for a project, anyone can be free for using or fork repo.
                 dateValues={[{date:'2020-11-25', value:240}, {date:'2020-11-26', value:200}]}
                 onDateClick={this.handleDateClick}
             />
+            
+            // You can handle day clicks in your view file and open modal or anything you want...
+            handleDateClick = (date, value, cellType) => {
+               alert(date + "," + value + "," + cellType);
+            };            
 
 
-![Calendar Preview](https://github.com/burakozturk16/React-HolidayCalendar/blob/master/preview.png?raw=true)
+![Calendar Preview](https://github.com/burakozturk16/React-HolidayCalendar/blob/main/preview.png?raw=true)
