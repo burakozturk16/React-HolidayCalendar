@@ -1,0 +1,109 @@
+.disabled {
+    cursor: no-drop !important;
+    background: rgba(249, 249, 249, 0.45) !important
+}
+
+.available {
+    background: #00ff97 !important;
+}
+
+.unavailable {
+    background: #ef5251 !important;
+}
+
+.today {
+    background: rgba(57, 154, 254, 0.2) !important;
+}
+
+#calendar {
+    min-height: 385px;
+}
+
+#calendar table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 1px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#calendar table td {
+    width: 80px !important;
+    color: #3499cd;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 7px;
+}
+
+#calendar table td:not(:first-child) {
+    width: 33px !important;
+    height: 33px !important;
+    text-align: center;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    background: #f0f0f0;
+    position: relative;
+    padding-right: 0;
+}
+
+#calendar table .headerTr th {
+    background: transparent;
+    border: none;
+    color: #3499cd;
+    font-weight: bold;
+}
+
+#calendar td.selected {
+    background-color: #ccc;
+}
+
+#calendar td.cell-selected {
+    background-color: #ccc !important;
+}
+
+#calendar .cell-label {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    text-align: center;
+    display: table-cell;
+    color: #000;
+}
+
+#calendar .year {
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    float: left;
+}
+
+#calendar .cell-label.day:hover {
+    background: #dcdcdc !important;
+}
+
+#calendar .cell-label.bold {
+    color: #FFF;
+    background: #000;
+    text-transform: uppercase;
+}
+
+.header-td-highlight {
+    background: #003466 !important;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 700px) {
+    #calendar {
+        width: 490px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
+        white-space: nowrap;
+    }
+    #calendar table {
+        width: 700px;
+    }
+}
