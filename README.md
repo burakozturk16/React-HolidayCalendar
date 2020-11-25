@@ -23,3 +23,6 @@ This component created for a project, anyone can be free for using or fork repo.
                 dateValues={[{date:'2020-11-25', value:240}, {date:'2020-11-26', value:200}]}
                 onDateClick={this.handleDateClick}
             />
+
+
+![Calendar Preview](https://github.com/burakozturk16/React-HolidayCalendar/blob/master/preview.png?raw=true)
